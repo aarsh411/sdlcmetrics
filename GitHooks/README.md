@@ -1,0 +1,1 @@
+This folder contains the template files of Git Hooks

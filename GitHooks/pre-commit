@@ -1,0 +1,8 @@
+#!/usr/%(path)s
+import sys
+from subprocess import check_output
+branch = check_output(['git', 'symbolic-ref', '--short', 'HEAD']).strip().decode()
+branchList= %(branchList)s
+if branch in branchList:
+	print ("ERROR! can't commit in {} branch" .format(branch))
+	sys.exit(1)

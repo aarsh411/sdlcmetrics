@@ -1,0 +1,5 @@
+#!/usr/%(path)s
+import sys
+if len(sys.argv) <= 2:
+    print ("%(error_message)s")
+    sys.exit(1)
